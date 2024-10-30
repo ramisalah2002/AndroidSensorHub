@@ -35,7 +35,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation("com.google.android.material:material:1.4.0")
-    
+    implementation(libs.firebase.firestore)
 
 
     // Testing dependencies

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText emailInput, passwordInput;
-    private Button loginButton, signupButton;
+    private Button loginButton, signupButton, viewDataButton;
     private DBHelper dbHelper;
 
     @Override
@@ -25,10 +25,16 @@ public class LoginActivity extends AppCompatActivity {
         passwordInput = findViewById(R.id.password);
         loginButton = findViewById(R.id.login_button);
         signupButton = findViewById(R.id.signup_button);
+        viewDataButton = findViewById(R.id.view_data_button);  // New button reference
 
         loginButton.setOnClickListener(v -> loginUser());
         signupButton.setOnClickListener(v -> {
             Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+            startActivity(intent);
+        });
+
+        viewDataButton.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, DataDisplayActivity.class);
             startActivity(intent);
         });
     }
@@ -46,3 +52,4 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 }
+
