@@ -16,9 +16,9 @@
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:src="@drawable/tachnology_image"
-    android:layout_gravity="center_horizontal"
-    android:contentDescription="Technology Image"
-    android:layout_marginBottom="24dp"/>
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Technology Image"
+        android:layout_marginBottom="24dp"/>
 
     <!-- Welcome message -->
     <TextView
@@ -120,45 +120,28 @@
         android:text="Se connecter"
         android:textSize="18dp"
         android:layout_marginBottom="16dp"
-    android:backgroundTint="@color/blue"
-    android:textColor="@color/white"
-    app:cornerRadius="10dp"
-    android:padding="16dp"
-    android:gravity="center" />
-
-
-    <!-- Forgot Password Link -->
-
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+        android:padding="16dp"
+        android:gravity="center" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signup_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create an account"
-        android:textSize="18dp"
+        android:text="Vous n'avez pas de compte? Inscription"
+        android:textSize="15sp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/purple_500"
-        android:textColor="@color/white"
-        app:cornerRadius="10dp"
-        android:padding="16dp"
-        android:gravity="center" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/view_data_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Data List"
-        android:textSize="18dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/purple_500"
-        android:textColor="@color/white"
-        app:cornerRadius="10dp"
-        android:padding="16dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
         android:gravity="center" />
 
 
 
-    <!-- Footer message and link -->
+
+
+
 
 
 </LinearLayout>

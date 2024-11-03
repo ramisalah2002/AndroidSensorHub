@@ -35,8 +35,17 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation("com.google.android.material:material:1.4.0")
-    implementation(libs.firebase.firestore)
 
+    implementation(libs.firebase.firestore)
+    implementation(libs.camera.core)
+
+    // Exclude Guava's ListenableFuture from Firebase Crashlytics
+    implementation(libs.firebase.crashlytics.buildtools) {
+        exclude(group = "com.google.guava", module = "listenablefuture")
+    }
+
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
 
     // Testing dependencies
     testImplementation(libs.junit)
